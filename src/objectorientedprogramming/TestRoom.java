@@ -8,6 +8,6 @@ public class TestRoom {
 	Room dimensions = new Room();
 
 dimensions.area();
-dimensions.areawithdoor();
+dimensions.areaWithdoor();
 }
 }
