@@ -5,11 +5,11 @@ public class BankAccount {
 	private double balance;
 	private int account;
 	private double interestrate;
-	
+
 //constructors
 	public BankAccount() {
 		balance = 99.0;
-		account = 99;
+		account = 123456;
 		interestrate = 99.0;
 	}
 
@@ -18,28 +18,38 @@ public class BankAccount {
 		account = newAccount;
 		interestrate = newInterestrate;
 	}
-	
-	//Mutator methods
+
+	// Mutator methods
 	public void setBalance(double newBalance) {
+		balance = newBalance;
 	}
+
 	public void setInterestrate(double newInterestrate) {
+		interestrate = newInterestrate;
 	}
-	public void setAccount(int newAccount) {
+
+	public void deposit(double amount) {
+		balance = balance + amount;
 	}
-	public void setDeposit(double newDeposit) {
+
+	public void withdraw(double amount) {
+		balance = balance - amount;
 	}
-	public void setWithdraw(double newWithdraw) {
+
+	public void addInterest() {
+		balance = balance + (balance * interestrate);
 	}
-	
-	//Accessor methods
+
+	// Accessor methods
 	public double getBalance() {
-		return balance +  ;
+		return balance;
 	}
+
 	public int getAccount() {
 		return account;
 	}
+
 	public double getInterestrate() {
 		return interestrate;
-	
 	}
 }
