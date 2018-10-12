@@ -21,12 +21,12 @@ public class Worker {
 		hours = newHours;
 	}
 	public void setPay(double newPay) {
-		newPay = pay + 10.5;
+		pay = newPay;
 	}
 
 	// Accessor Methods
 	public double getPay() {
-		return pay;
+		return pay + 10.0;
 	}
 
 	public double getHours() {
