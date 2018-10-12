@@ -10,7 +10,7 @@ public class BankAccount {
 	public BankAccount() {
 		balance = 99.0;
 		account = 123456;
-		interestrate = 99.0;
+		interestrate = 0.50;
 	}
 
 	public BankAccount(double newBalance, int newAccount, double newInterestrate) {
@@ -23,7 +23,7 @@ public class BankAccount {
 	public void setBalance(double newBalance) {
 		balance = newBalance;
 	}
-
+	
 	public void setInterestrate(double newInterestrate) {
 		interestrate = newInterestrate;
 	}
@@ -39,6 +39,9 @@ public class BankAccount {
 	public void addInterest() {
 		balance = balance + (balance * interestrate);
 	}
+	public void financecharge(double charge) {
+		balance = balance - charge;
+	}
 
 	// Accessor methods
 	public double getBalance() {
@@ -49,7 +52,4 @@ public class BankAccount {
 		return account;
 	}
 
-	public double getInterestrate() {
-		return interestrate;
-	}
 }
