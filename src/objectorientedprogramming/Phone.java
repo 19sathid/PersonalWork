@@ -1,21 +1,25 @@
 package objectorientedprogramming;
 
 public class Phone {
-//instance fields
+	// instance fields
 	private int myphonenumber;
 	private int speeddial;
 	private int lastnumbercalled;
-	private final int emergencynumber;
+	private final int emergencynumber = 911;
 	private int numberofcalls;
-	private double talktime;
+	private int talktime;
 
 	// constructors
 	public Phone() {
-		emergencynumber = 911;
+		myphonenumber = 123456;
+		speeddial = 123456;
+		lastnumbercalled = 123456;
+		numberofcalls = 100;
+		talktime = 60;
 	}
 
 	public Phone(int newMyphonenumber, int newSpeeddial, int newLastnumbercalled, int newNumberofcalls,
-			double newTalktime) {
+			int newTalktime) {
 		myphonenumber = newMyphonenumber;
 		speeddial = newSpeeddial;
 		lastnumbercalled = newLastnumbercalled;
@@ -24,9 +28,10 @@ public class Phone {
 	}
 
 	// Mutator methods
-	public void MakeaCall(int newLastnumbercalled, double newTalktime) {
+	public void MakeaCall(int newLastnumbercalled, int newTalktime) {
 		lastnumbercalled = newLastnumbercalled;
 		talktime = newTalktime;
+
 	}
 
 	// Accessor methods
@@ -34,8 +39,12 @@ public class Phone {
 		return lastnumbercalled;
 	}
 
-	public double getTalktime() {
+	public int getTalktime() {
 		return talktime;
+	}
+
+	public int getMyphonenumber() {
+		return myphonenumber;
 	}
 
 }
