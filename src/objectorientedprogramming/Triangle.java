@@ -16,6 +16,14 @@ public class Triangle {
 		height = newHeight;
 	}
 	
+	// Mutator methods
+		public void setBase(double newBase) {
+			base = newBase;
+		}
+		public void setHeight(double newHeight) {
+			height = newHeight;
+		}
+	
 	// Accessor Methods
 		public double getBase() {
 			return base;
