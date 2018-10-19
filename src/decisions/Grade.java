@@ -13,16 +13,16 @@ public class Grade {
 		double second = input.nextDouble();
 		System.out.println("Enter your third test score:");
 		double third = input.nextDouble();
-		System.out.println("Enter the total points");
-		int total = input.nextInt();
+		double average = first + second + third;
+		average = average/3;
 		System.out.println("Did you do the extra credit?");
 		boolean extra = input.nextBoolean();
-		if(extra == true){
+		if (extra == true) {
 			System.out.println("Enter the number of points earned for extra credit:");
-		double points = input.nextDouble();
-		System.out.println("Grade:" + ((first+second+third)%3)+points);
+			double extraCredit = input.nextDouble();
+			average = average + extraCredit;
+			System.out.println("Your average is " + average);
 		}
-		System.out.println("Grade:" + ((first+second+third)%(3*total))*100 + "%"); 
 	}
 
 }
