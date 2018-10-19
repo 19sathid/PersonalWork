@@ -21,11 +21,9 @@ public class Salary {
 					System.out.println("You are a CEO");
 				} 
 				else {
-					if (salary > 100000) {
 						System.out.println("You are the owner");
 					}
 				}
 			}
 		}
 	}
-}
