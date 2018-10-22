@@ -46,18 +46,6 @@ public class HomeImprovement {
 		double time = (length*rows)*rate;
 		System.out.println("It will take" + time + "hours to plant the garden.");
 	}
-	
-	
-	
-	
-	
-	
-	public void plantgarden(){
-		double volume = Math.PI*radius*radius*height;
-		final double conversion = 7.48052; //cubic feet to gallons
-		time = volume*rate;
-		System.out.println("It will take" + time + " to fill the pool.");
 		
 		
-}
 }
