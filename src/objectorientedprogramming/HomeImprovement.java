@@ -53,9 +53,11 @@ public class HomeImprovement {
 	
 	
 	public void plantgarden(){
+		double radius = 0;
+		double height = 0;
 		double volume = Math.PI*radius*radius*height;
 		final double conversion = 7.48052; //cubic feet to gallons
-		time = volume*rate;
+		double time = volume*conversion;
 		System.out.println("It will take" + time + " to fill the pool.");
 		
 		
