@@ -8,6 +8,7 @@ public class Activity4 {
 		// TODO Auto-generated method stub
 Scanner input = new Scanner(System.in);
 int multiples = 0;
+int sum = 0;
 System.out.println("Enter endpoint");
 int endpoint = input.nextInt();
 while(multiples <= endpoint){
