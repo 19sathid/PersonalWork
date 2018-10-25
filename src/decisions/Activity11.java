@@ -12,18 +12,16 @@ public class Activity11 {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter an integer");
 		number = input.nextInt();
+		largest = number;
+		smallest = number;
 		do {
-			if (number > largest) {
+			if (number > largest)
 				largest = number;
-			}
+			if (number < smallest)
+				smallest = number;
 			System.out.println("Enter a an integer(Enter 9999 to quit)");
 			number = input.nextInt();
-			if (number < smallest) {
-				smallest = number;
-			}
-
 		} while (number != 9999);
-
 		System.out.println("Range:" + (largest - smallest));
 
 	}
