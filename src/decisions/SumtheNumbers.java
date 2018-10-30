@@ -14,8 +14,9 @@ public class SumtheNumbers {
 		do {
 			System.out.println("Enter a number");
 			num = input.nextInt();
-			sum = num++;
+			sum = sum + num;
 			System.out.println("Sum: " + sum);
 		}while (num != 999);
+		
 	}
 }
