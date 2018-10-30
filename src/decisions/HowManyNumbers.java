@@ -15,9 +15,9 @@ public class HowManyNumbers {
 		do {
 			System.out.println("Enter a number");
 			number = input.nextInt();
-			sum = number++;
-			num++;
+			sum = sum + number;
 		} while (sum != 240);
+		num++;
 		System.out.println("Number of numbers entered: " + num);
 	}
 
