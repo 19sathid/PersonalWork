@@ -8,17 +8,17 @@ public class HowManyNumbers {
 		// TODO Auto-generated method stub
 		int number = 0;
 		int sum = 0;
-		int num = 0;
+		int counter = 0;
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a number");
 		number = input.nextInt();
 		do {
+			sum += number;
+			counter++;
 			System.out.println("Enter a number");
 			number = input.nextInt();
-			sum = sum + number;
-		} while (sum != 240);
-		num++;
-		System.out.println("Number of numbers entered: " + num);
+		} while (sum <= 2018);
+		System.out.println("Number of numbers entered: " + counter);
 	}
 
 }
