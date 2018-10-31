@@ -12,11 +12,11 @@ public class SumtheNumbers {
 		System.out.println("Enter a number(Enter 999 to quit)");
 		num = input.nextInt();
 		do {
+			sum += num;
 			System.out.println("Enter a number");
 			num = input.nextInt();
-			sum = sum + num;
-			System.out.println("Sum: " + sum);
 		}while (num != 999);
+		System.out.println("Sum: " + sum);
 		
 	}
 }
