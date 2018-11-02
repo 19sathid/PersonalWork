@@ -9,21 +9,21 @@ public class DivisorInput {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a positive integer");
 		int integer = input.nextInt();
+		int highest = 0;
 		int largest = 0;
-		int number = 0;
-		int num = 0;
-		for (int counter = 1; counter < integer; counter++) {
-			for (number = 1; number < integer; number++) {
-				if (number % counter == 0) {
-					num++;
+		int divisor = 0;
+		for (int numerator = 1; numerator <= integer; numerator++) {
+			for (int denominator = 1; denominator <= numerator; denominator++) {
+				if (numerator % denominator == 0) {
+					divisor++;
+				}
+				if (divisor >= highest) {
+					highest = divisor;
+					largest = numerator;
 				}
 			}
+			divisor = 0;
 		}
-		if (num > largest) {
-			largest = num;
-		}
-		num = 0;
-		System.out.println(number);
+		System.out.println(largest);
 	}
-
 }
