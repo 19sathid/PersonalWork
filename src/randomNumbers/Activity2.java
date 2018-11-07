@@ -3,6 +3,7 @@ package randomNumbers;
 import java.util.Random;
 
 public class Activity2 {
+	public static void main(String[]args){
 	Random generator = new Random();
 	int randomNum = 0;
 	int min = 1; // minimum random number generated
@@ -10,7 +11,7 @@ public class Activity2 {
 	int threes = 0;
 for(int counter = 1;counter<=87;counter++)
 	{
-		randomNum = 1 + generator.nextInt(87 - 1 + 1);
+		randomNum = min + generator.nextInt(max - min + 1);
 		if(randomNum % 3 == 0)
 			threes++;
 	}
