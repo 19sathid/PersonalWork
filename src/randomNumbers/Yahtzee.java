@@ -13,7 +13,7 @@ public class Yahtzee {
 		int count = 0;
 		int tries = 0;
 		boolean yahtzee = false;
-		while (yahtzee = false) {
+		while (yahtzee == false) {
 			for (int i = 1; i < 5; i++) {
 				int outcome = min + generator.nextInt(max - min + 1);
 				if (roll == 0) {
@@ -22,6 +22,7 @@ public class Yahtzee {
 				} else if (outcome == roll) {
 					count++;
 				}
+				System.out.println(outcome);
 			}
 			if (count == 5) {
 				System.out.println("You got Yahtzee! It took you " + tries + " tries!");
