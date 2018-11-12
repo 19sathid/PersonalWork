@@ -32,6 +32,7 @@ public class Yahtzee {
 				tries++;				
 			}
 			count = 0;
+			roll = 0;
 		}
 	}
 }
