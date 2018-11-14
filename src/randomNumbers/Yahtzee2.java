@@ -17,10 +17,7 @@ public class Yahtzee2 {
 		while (yahtzee = false) {
 			for (int i = 1; i < 5; i++) {
 				int outcome = min + generator.nextInt(max - min + 1);
-				die=outcome;
-				
-				
-				}
+				die = outcome;
 				if (roll == 0) {
 					roll = outcome;
 					count++;
