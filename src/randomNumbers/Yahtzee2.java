@@ -14,7 +14,7 @@ public class Yahtzee2 {
 		int tries = 0;
 		int die = 0;
 		boolean yahtzee = false;
-		while (yahtzee = false) {
+		while (yahtzee == false) {
 			for (int i = 1; i < 5; i++) {
 				int outcome = min + generator.nextInt(max - min + 1);
 				die = outcome;
