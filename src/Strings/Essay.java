@@ -50,7 +50,7 @@ public class Essay {
 				spaces++;
 			}
 		}
-		words = spaces - 1;
+		words = spaces + 1;
 		return words;
 	}
 }

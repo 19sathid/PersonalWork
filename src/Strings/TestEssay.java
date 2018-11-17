@@ -10,6 +10,7 @@ public class TestEssay {
 		System.out.println("Author's Last Name: " + book.getLastName());
 		System.out.println("There are " + book.getFirstName() + " characters in the author's first name.");
 		System.out.println("Does the author's name contain 'X'? : " + book.findX());
+		System.out.println("Number of words in the essay: " + book.numWords());
 	}
 
 }
