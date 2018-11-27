@@ -34,5 +34,9 @@ public class TestScores {
 			}
 		}
 		System.out.println("The largest score is " + largest);
+		
+		final int numScores = 250;
+		double[] test = new double[numScores];
+		System.out.println("The number of elements in the arrays=" + test.length);
 	}
 }
