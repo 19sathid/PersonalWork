@@ -3,7 +3,7 @@ package arrays;
 import java.util.Scanner;
 import java.util.Random;
 
-public class RollADie2 {
+public class RollaDie2 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random();
