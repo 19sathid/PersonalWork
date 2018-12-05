@@ -14,18 +14,22 @@ public class StudentTests {
 		int rows = num;
 		int columns = numofTests;
 		int[][] scores = new int[rows][columns];
-
-		for (int r = 0; r < num; r++) {
-			for (int c = 0; c < numofTests; c++) {
+		int allAverage = 0;
+		for (int r = 0; r < rows; r++) {
+			for (int c = 0; c < columns; c++) {
 				System.out.println("Enter the scores for each of the tests");
 				scores[r][c] = input.nextInt();
+				allAverage += scores[r][c];
 			}
 		}
-		for (int r = 0; r < num; r++) {
-			for (int c = 0; c < numofTests; c++) {
-				System.out.println(scores[r][c] + "   ");
+		allAverage = allAverage / (rows * columns);
+		for (int r = 0; r < rows; r++) {
+			int studentAverage = 0;
+			for (int c = 0; c < columns; c++) {
+				scores[r][c]++;
 			}
+			System.out.println("Test Average of Student: " + sum / columns);
+		}
 
-		}
 	}
 }
