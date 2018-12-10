@@ -32,7 +32,6 @@ public class ArrayLists {
 		}
 		
 		
-		
 		input.close();
 	}
 
