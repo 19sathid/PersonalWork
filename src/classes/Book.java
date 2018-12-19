@@ -2,16 +2,21 @@ package classes;
 
 public class Book {
 	private String title;
-	private int numPages;
+	private int pages;
 
 	public Book() {
-		title = "Harry Potter";
-		numPages = 300;
+		title = "Title";
+		pages = 30;
 	}
 
-	public Book(String xTitle, int xNum) {
+	// @ xPages has to be greater than 0
+	public Book(String xTitle, int xPages) {
 		title = xTitle;
-		numPages = xNum;
+		if (xPages > 0) {
+			pages = xPages;
+		} else {
+			pages = 30;
+		}
 	}
 
 	public String getTitle() {
@@ -19,6 +24,23 @@ public class Book {
 	}
 
 	public int getPages() {
-		return numPages;
+		return pages;
+	}
+
+	public String toString() {
+		return "Book Class: title - " + title + " & pages - " + pages;
+	}
+
+	public Book clone() {
+		return new Book(title, pages);
+	}
+
+	public boolean equals(Book book) {
+		if (this.toString().equals(book.toString())) {
+			return true;
+		} else {
+			return false;
+		}
+
 	}
 }
