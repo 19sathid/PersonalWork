@@ -4,16 +4,18 @@ import java.util.ArrayList;
 
 public interface TestShapes {
 	public static void main(String[] args) {
-		ArrayList<Shape> object = new ArrayList<Shape>();
-		object.add(new Rectangle(1, 1));
-		object.add(new Rectangle(2, 3));
-		object.add(new Rectangle(3, 4));
-		object.addAll(new Circle(5));
-		object.addAll(new Circle(7));
-		object.addAll(new Circle(8));
+		ArrayList<Shape> shapes = new ArrayList<Shape>();
+		for (int i = 0; i < 3; i++) {
+			shapes.add(new Rectangle(i + 5, i + 2));
+		}
+
+		for (int i = 0; i < 3; i++) {
+			shapes.add(new Circle(i + 4));
+		}
+
 		double areaSum = 0;
-		double smallPerim = (Shape) object.get(0).perimeter();//
-		for (Shape temp : object) {
+		double smallPerim = 100000;
+		for (Shape temp : shapes) {
 			areaSum += temp.area();
 			if (temp.perimeter() < smallPerim) {
 				smallPerim = temp.perimeter();
