@@ -7,11 +7,11 @@ public class TestFish {
 	public static void main(String[] args) {
 		ArrayList<Fish> seaFish = new ArrayList<Fish>();
 		for(int i = 0; i < 5; i++) {
-			seaFish.add(new Trout(i + 4; i + 1;"blue"));
+			seaFish.add(new Trout(i + 4, i + 1, i + 2));
 		}
 		
 		for(int i = 0; i < 5; i++) {
-			seaFish.add(new GoldFish(i + 3; i + 1;"blue"));
+			seaFish.add(new GoldFish(i + 3, i + 1, "blue"));
 		}
 		double longest = 0;
 		for(Fish x : seaFish) {
@@ -19,7 +19,7 @@ public class TestFish {
 				longest = x.getLength();
 			}
 		}
-	//	System.out.println("Longest fish length : " + longest + ", age : " +  + ", ");
+		
 	}
 
 }
