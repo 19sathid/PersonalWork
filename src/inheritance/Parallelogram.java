@@ -24,4 +24,8 @@ public class Parallelogram extends Quadrilateral {
 		double area = super.getSide4() * height;
 		return area;
 	}
+
+	public String toString() {
+		return ("Parallelogram: Height : " + height + super.toString());
+	}
 }
