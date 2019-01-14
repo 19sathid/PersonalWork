@@ -17,9 +17,19 @@ public class TestGeo {
 				shapes.add(new Trapezoid());
 			}
 
-			int largestAreaIndex = 0;
-			double largestArea = shapes.area();
-
+			double largestArea = 0;
+			String type = "";
+			for (Geo x : shapes) {
+				if (x.area() > largestArea) {
+					largestArea = x.area();
+				}
+				if (x instanceof Rectangle) {
+					type = "Rectangle";
+				} else {
+					type = "Trapezoid";
+				}
+			}
+			System.out.println(type + "Area : " + largestArea);
 		}
 
 	}
