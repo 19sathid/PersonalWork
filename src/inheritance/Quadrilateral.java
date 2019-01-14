@@ -55,4 +55,8 @@ public class Quadrilateral {
 	public double perimeter() {
 		return (s1 + s2 + s3 + s4);
 	}
+
+	public String toString() {
+		return ("Quadrilateral : Side 1 : " + s1 + " Side 2 : " + s2 + " Side 3 : " + s3 + " Side 4 : " + s4);
+	}
 }
