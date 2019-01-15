@@ -57,6 +57,6 @@ public class Quadrilateral {
 	}
 
 	public String toString() {
-		return ("Quadrilateral : Side 1 : " + s1 + " Side 2 : " + s2 + " Side 3 : " + s3 + " Side 4 : " + s4);
+		return (" Quadrilateral : Side 1 : " + s1 + " Side 2 : " + s2 + " Side 3 : " + s3 + " Side 4 : " + s4);
 	}
 }
