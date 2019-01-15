@@ -8,8 +8,9 @@ public class Parallelogram extends Quadrilateral {
 		height = 4;
 	}
 
-	public Parallelogram(double a, double b) {
+	public Parallelogram(double a, double b, double h) {
 		super(a, b, a, b);
+		height = h;
 	}
 
 	public double getHeight() {
