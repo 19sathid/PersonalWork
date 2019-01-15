@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Trapezoid extends Quadrilateral implements Geo{
+public class Trapezoid extends Quadrilateral implements Geo {
 	private double height;
 
 	public Trapezoid() {
@@ -26,5 +26,9 @@ public class Trapezoid extends Quadrilateral implements Geo{
 	public double area() {
 		double area = ((super.getSide2() + super.getSide4()) / 2) * height;
 		return area;
+	}
+
+	public String toString() {
+		return ("Trapezoid : " + super.toString());
 	}
 }
