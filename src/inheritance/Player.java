@@ -1,23 +1,23 @@
 package inheritance;
 
 public class Player {
-	private String health;
+	private double health;
 	private int locX;
 	private int locY;
 
 	public Player() {
-		health = "alive";
+		health = 0;
 		locX = 10;
 		locY = 12;
 	}
 
-	public Player(String h, int x, int y) {
+	public Player(double h, int x, int y) {
 		health = h;
 		locX = x;
 		locY = y;
 	}
 
-	public String getHealth() {
+	public double getHealth() {
 		return health;
 	}
 
@@ -29,7 +29,7 @@ public class Player {
 		return locY;
 	}
 
-	public void setHealth(String h) {
+	public void setHealth(double h) {
 		health = h;
 	}
 
@@ -48,9 +48,9 @@ public class Player {
 
 	public boolean dead() {
 		boolean answer = false;
-		if (health == "dead") {
+		if (health == 0) {
 			answer = true;
-		} else if (health == "alive") {
+		} else if (health == 1) {
 			answer = false;
 		}
 		return answer;
