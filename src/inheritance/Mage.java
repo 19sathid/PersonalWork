@@ -11,7 +11,7 @@ public class Mage extends Player {
 		spells = 2;
 	}
 
-	public Mage(String n, int xCo, int yCo, int s) {
+	public Mage(double n, int xCo, int yCo, int s) {
 		super(n, xCo, yCo);
 		spells = s;
 	}
@@ -28,9 +28,9 @@ public class Mage extends Player {
 		super.setLocX(1 + rand.nextInt(10));
 		super.setLocY(1 + rand.nextInt(10));
 		int chance = 1 + rand.nextInt(10);
-		if (chance == 1) { //
-
-		} //
+		if (chance == 1) { 
+			super.setHealth(super.getHealth() + 1);
+		} 
 		chance = 1 + rand.nextInt(8);
 		if (chance == 1) {
 			spells += 1;
