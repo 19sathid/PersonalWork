@@ -27,7 +27,7 @@ public class Employee {
 	}
 
 	public String toString() {
-		return ("Employee : Name : " + name + " , rate of pay : " + rateOfPay);
+		return (" Employee : Name : " + name + ", rate of pay : " + rateOfPay);
 	}
 
 	public boolean equals(Employee user) {
